@@ -1,0 +1,14 @@
+Username:4oh8sz9p7sf1
+Password:pscale_pw_YvpSiynhKWbeZfJB0VzMrud_nuKsGjARu4_nvhRlM_c
+
+DATABASE_URL='mysql://4oh8sz9p7sf1:pscale_pw_YvpSiynhKWbeZfJB0VzMrud_nuKsGjARu4_nvhRlM_c@do2rft99qapv.ap-southeast-2.psdb.cloud/beamdb?sslaccept=strict'
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
